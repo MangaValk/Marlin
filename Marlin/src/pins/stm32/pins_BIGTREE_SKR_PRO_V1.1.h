@@ -39,6 +39,12 @@
 #define SERVO0_PIN         PA1
 
 //
+// Runout Switches
+//
+#define FIL_RUNOUT_PIN     PE4
+#define FIL_RUNOUT2_PIN    PD0
+
+//
 // Limit Switches
 //
 #define X_MIN_PIN          PB10
@@ -52,7 +58,7 @@
 // Z Probe must be this pins
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  PA2
+  #define Z_MIN_PROBE_PIN  PG8
 #endif
 
 //
@@ -93,11 +99,12 @@
   #define E1_CS_PIN        PG15
 #endif
 
-#define E2_STEP_PIN        PD13
-#define E2_DIR_PIN         PG9
-#define E2_ENABLE_PIN      PF0
-#ifndef E2_CS_PIN
-  #define E2_CS_PIN        PG12
+// E2
+#define Z2_STEP_PIN        PD13
+#define Z2_DIR_PIN         PG9
+#define Z2_ENABLE_PIN      PF0
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN        PG12
 #endif
 
 //
